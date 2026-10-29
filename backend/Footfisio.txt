@@ -1,0 +1,8 @@
+PORT=3001
+FRONTEND_ORIGIN=http://localhost:5173
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=root
+DB_NAME=footfisio
+JWT_SECRET=footfisio_clave_temporal_cambiar_2026_aleatoria
