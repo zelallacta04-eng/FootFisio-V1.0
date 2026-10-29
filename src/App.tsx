@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import AuthPage from './AuthPage'
+=======
+>>>>>>> 1c27fd06566463f5cdc3dd43eb2b8d766f66e1ad
 import { useState, useEffect } from 'react'
 
 // ─── Types ─────────────────────────────────────────────────────────────────
@@ -1520,7 +1523,11 @@ export default function App() {
   if (!isLoggedIn && entryRole === 'patient') {
     return <PublicBooking onBack={() => setEntryRole(null)} onBook={appointment => setAppointments(current => [...current, appointment])} />
   }
+<<<<<<< HEAD
   if (!isLoggedIn) return <AuthPage role={entryRole as Role} onLogin={handleLogin} onBack={() => setEntryRole(null)} />
+=======
+  if (!isLoggedIn) return <LoginPage role={entryRole as Role} onLogin={handleLogin} onBack={() => setEntryRole(null)} />
+>>>>>>> 1c27fd06566463f5cdc3dd43eb2b8d766f66e1ad
 
   const today = new Date().toISOString().slice(0, 10)
   const roleAppointments = userRole === 'therapist' ? appointments.filter(appointment => appointment.doctor === userName) : appointments

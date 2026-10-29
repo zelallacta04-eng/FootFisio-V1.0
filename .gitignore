@@ -15,4 +15,7 @@ logs/
 # beside it.
 /.plugins/
 /.opencode-skills/
+<<<<<<< HEAD
 !backend/.env.example
+=======
+>>>>>>> 1c27fd06566463f5cdc3dd43eb2b8d766f66e1ad
